@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"blinkylight1\startup_stm32f103xb.o"
+"blinkylight1\main.o"
+"blinkylight1\stm32f1xx_it.o"
+"blinkylight1\stm32f1xx_hal_msp.o"
+"blinkylight1\stm32f1xx_hal_gpio_ex.o"
+"blinkylight1\stm32f1xx_hal.o"
+"blinkylight1\stm32f1xx_hal_rcc.o"
+"blinkylight1\stm32f1xx_hal_rcc_ex.o"
+"blinkylight1\stm32f1xx_hal_gpio.o"
+"blinkylight1\stm32f1xx_hal_dma.o"
+"blinkylight1\stm32f1xx_hal_cortex.o"
+"blinkylight1\stm32f1xx_hal_pwr.o"
+"blinkylight1\stm32f1xx_hal_flash.o"
+"blinkylight1\stm32f1xx_hal_flash_ex.o"
+"blinkylight1\stm32f1xx_hal_exti.o"
+"blinkylight1\system_stm32f1xx.o"
+--strict --scatter "blinkylight1\blinkylight1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "blinkylight1.map" -o blinkylight1\blinkylight1.axf
