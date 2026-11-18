@@ -24,9 +24,9 @@ int main(void)
 	{
 		GPIO_WriteBit(GPIOA, GPIO_Pin_9, Bit_SET);
 		GPIO_WriteBit(GPIOC, GPIO_Pin_13, Bit_RESET);
-		Delay(500);
+		Delay(250);
 		GPIO_WriteBit(GPIOA, GPIO_Pin_9, Bit_RESET);
 		GPIO_WriteBit(GPIOC, GPIO_Pin_13, Bit_SET);
-		Delay(500);
+		Delay(250);
 	}
 }
