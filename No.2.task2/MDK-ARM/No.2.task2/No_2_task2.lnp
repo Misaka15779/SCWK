@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"no.2.task2\startup_stm32f103xb.o"
+"no.2.task2\main.o"
+"no.2.task2\stm32f1xx_it.o"
+"no.2.task2\stm32f1xx_hal_msp.o"
+"no.2.task2\stm32f1xx_hal_gpio_ex.o"
+"no.2.task2\stm32f1xx_hal_tim.o"
+"no.2.task2\stm32f1xx_hal_tim_ex.o"
+"no.2.task2\stm32f1xx_hal.o"
+"no.2.task2\stm32f1xx_hal_rcc.o"
+"no.2.task2\stm32f1xx_hal_rcc_ex.o"
+"no.2.task2\stm32f1xx_hal_gpio.o"
+"no.2.task2\stm32f1xx_hal_dma.o"
+"no.2.task2\stm32f1xx_hal_cortex.o"
+"no.2.task2\stm32f1xx_hal_pwr.o"
+"no.2.task2\stm32f1xx_hal_flash.o"
+"no.2.task2\stm32f1xx_hal_flash_ex.o"
+"no.2.task2\stm32f1xx_hal_exti.o"
+"no.2.task2\system_stm32f1xx.o"
+--strict --scatter "No.2.task2\No_2_task2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "No_2_task2.map" -o No.2.task2\No_2_task2.axf
